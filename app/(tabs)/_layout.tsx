@@ -2,8 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 import React from 'react';
 
-import { HapticTab } from '@/components/haptic-tab';
-import { Colors } from '@/constants/theme';
+import { HapticTab } from '../../components/haptic-tab';
 import { GameProvider } from "../../context/GameContext";
 
 export default function TabLayout() {
@@ -12,7 +11,7 @@ export default function TabLayout() {
     <GameProvider>
       <Tabs
         screenOptions={{
-          tabBarActiveTintColor: Colors['light'].tint,
+          tabBarActiveTintColor: '#0a7ea4',
           headerShown: false,
           tabBarButton: HapticTab,
         }}>
